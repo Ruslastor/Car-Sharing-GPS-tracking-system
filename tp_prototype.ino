@@ -23,7 +23,6 @@ const char* phoneNumber = "+48________";
 void setup() {
   Serial.begin(9600);
   sim800.begin(9600);
-  gps.begin(9600);
 
   pinMode(SIGNAL_PIN, INPUT_PULLUP);
 
