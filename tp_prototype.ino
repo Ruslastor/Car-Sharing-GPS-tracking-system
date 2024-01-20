@@ -18,7 +18,7 @@
 SoftwareSerial sim800(SIM800_TX_PIN, SIM800_RX_PIN);
 SoftwareSerial gps(GPS_TX_PIN, GPS_RX_PIN);
 
-const char* phoneNumber = "+48698024271";
+const char* phoneNumber = "+48________";
 
 void setup() {
   Serial.begin(9600);
