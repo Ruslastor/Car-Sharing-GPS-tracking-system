@@ -1,5 +1,5 @@
 #include <SoftwareSerial.h>
-
+#include <GyverPower.h>
 // SIM800L module connections
 #define SIM800_RX_PIN 5
 #define SIM800_TX_PIN 4
@@ -18,11 +18,12 @@
 SoftwareSerial sim800(SIM800_TX_PIN, SIM800_RX_PIN);
 SoftwareSerial gps(GPS_TX_PIN, GPS_RX_PIN);
 
-const char* phoneNumber = "+48________";
+const char* phoneNumber = "+48_________";
 
 void setup() {
-  Serial.begin(9600);
+  power.setSleepMode(POWERDOWN_SLEEP);
   sim800.begin(9600);
+  gps.begin(9600);
 
   pinMode(SIGNAL_PIN, INPUT_PULLUP);
 
