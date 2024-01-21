@@ -52,5 +52,47 @@
     <th>Power consumption</th>
     <th>Cost</th>
   </tr>
+  <tr>
+    <td>GSM</td>
+    <td>SIM800L</td>
+    <td>pic</td>
+    <td>GSM transmission (average): 350 mA, 1.75W</td>
+    <td>38,86 PLN</td>
+  </tr>
+  <tr>
+    <td>GPS</td>
+    <td>NEO6MV2</td>
+    <td>pic</td>
+    <td>67 mA, 0,335 W</td>
+    <td>30 pln</td>
+  </tr>
+  <tr>
+    <td>Microcontroller</td>
+    <td>Arduino UNO</td>
+    <td>pic</td>
+    <td>250mW in regular mode, 1mW in powerdown sleep mode</td>
+    <td>80 pln</td>
+  </tr>
+  <tr>
+    <td>Battery</td>
+    <td>18650</td>
+    <td>pic</td>
+    <td>-</td>
+    <td>12 pln</td>
+  </tr>
+  <tr>
+    <td>BMS</td>
+    <td>BMS 2S1P</td>
+    <td>pic</td>
+    <td>-</td>
+    <td>8 pln</td>
+  </tr>
+  <tr>
+    <td>Power converter</td>
+    <td>LM2596</td>
+    <td>pic</td>
+    <td>typically 10% from total power consumption</td>
+    <td>10 pln</td>
+  </tr>
 </table>
 <img src="images/circuitry.png" alt="Alt Text" width="300"/>
