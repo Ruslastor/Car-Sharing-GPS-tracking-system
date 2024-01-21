@@ -13,4 +13,4 @@
   <li>Cheaper than 500 PLN</li>
 </ul>
 
-<img src="images/insides.jpg" alt="Alt Text" width="300"/>
+<img src="images/circuitry.png" alt="Alt Text" width="300"/>
