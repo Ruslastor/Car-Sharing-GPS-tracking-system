@@ -133,5 +133,6 @@
 <p>Look from the inside:</p>
 <img src="images/insides.jpg" alt="Alt Text" width="300"/>
 
-<p>And finally, the competition part:</p>
-<img src="images/competition.jpg" alt="Alt Text" width="300"/>
+<p>And finally, the competition results:</p>
+<img src="images/results.jpg" alt="Alt Text" width="300"/>
+<p>We then inserted the results into the parser, written in python, that will show the route of the car.</p>
