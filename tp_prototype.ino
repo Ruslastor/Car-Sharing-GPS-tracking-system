@@ -23,6 +23,7 @@ const char* phoneNumber = "+48_________";
 
 void setup() {
   power.setSleepMode(POWERDOWN_SLEEP);
+  attachInterrupt(SIGNAL_PIN, wakeup, RISING);
   sim800.begin(9600);
   gps.begin(9600);
 
@@ -41,10 +42,10 @@ void setup() {
 void loop() {
     sendSMS(getGPSLocation());
     power.sleepDelay(POWERDOWN_DELAY); // Delay to avoid multiple SMS sending for a single low-level signal
-  
-
   // Other code or tasks to perform in the loop
 }
+
+void wakeup(){}
 
 String getGPSLocation() {
   String latitude, longitude;
