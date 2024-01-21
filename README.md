@@ -44,7 +44,13 @@
 
 
 <h2><b>Project electronics</b></h2> 
-
-
-
+<table>
+  <tr>
+    <th>Module</th>
+    <th>Name</th>
+    <th>Picture</th>
+    <th>Power consumption</th>
+    <th>Cost</th>
+  </tr>
+</table>
 <img src="images/circuitry.png" alt="Alt Text" width="300"/>
