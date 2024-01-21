@@ -116,7 +116,7 @@
   <li>The GSM module turns off</li>
   <li>Arduino goes to sleep mode for 2 minutes</li>
 </ul>
-<p>Both GPS and GSM modules use UART to communicate with arduino. However, the Arduino UNO has only one physical Serial, we used instead 2 Software serial ports.</p>
+<p>Both GPS and GSM modules use UART to communicate with arduino, with the use of ATM commands to configure, and get data from the module. However, the Arduino UNO has only one physical Serial, we used instead 2 Software serial ports.</p>
 
 <h3>Issue with GSM module (fixed)</h3>
 <p>However, we had an issue with the GSM module, which wasn't able to turn on. Looking into the datasheet, the one thing was descovered about those modules. The module itself helps to minimize the amount of pins, and helps for easier antenna management. However, it has really strange voltage decreasing system.</p>
