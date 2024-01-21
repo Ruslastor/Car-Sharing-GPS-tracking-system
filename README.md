@@ -16,24 +16,29 @@
 <p>Existing solutions:</p>
 <table>
   <tr>
-    <th><img src="images/device1.png" alt="Alt Text" width="100"/></th>
-    <th><img src="images/device2.png" alt="Alt Text" width="100"/></th>
-    <th><img src="images/device3.png" alt="Alt Text" width="100"/></th>
+    <th><img src="images/device1.png" alt="Alt Text" width="200"/></th>
+    <th><img src="images/device2.png" alt="Alt Text" width="200"/></th>
+    <th><img src="images/device3.png" alt="Alt Text" width="200"/></th>
   </tr>
   <tr>
     <td>Has phone app</td>
-    <td>Low Powered</td>
+    <td>Has phone app</td>
+    <td>Has phone app</td>
+  </tr>
+  <tr>
+    <td>3V 3000mAh</td>
+    <td>4800mAh 550 days of work, if 1 report per day</td>
+    <td>550 days of work, if 24 reports per day</td>
+  </tr>
+  <tr>
     <td>Uses SigFox network</td>
-  </tr>
-  <tr>
-    <td>Has phone app</td>
-    <td>Very low powered (550 days of work)</td>
+    <td>Uses Satellite for connection</td>
     <td>Uses Satellite for connection</td>
   </tr>
   <tr>
-    <td>Has phone app</td>
-    <td>Low powered</td>
-    <td>Uses Satellite for connection</td>
+    <td><a href="https://partners.sigfox.com/products/chipfox-gps-tracker-heavy-duty">LINK</a></td>
+    <td><a href="https://www.rewiresecurity.co.uk/sat50-satellite-asset-tracker">LINK</a></td>
+    <td><a href="https://aliresources.hexagon.com/fabrication/geoforce-gt0-industrial-grade-gps-asset-tracker">LINK</a></td>
   </tr>
 </table>
 
