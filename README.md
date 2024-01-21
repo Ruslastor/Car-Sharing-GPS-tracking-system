@@ -5,10 +5,12 @@
 <h><b>Part one</b></h> 
 
 <p>The first stage was to define the project targets. Those are:</p>
-<p> 1. Small tracking device</p>
-<p> 2. Lasting for a long time</p>
-<p> 3. Adapted to railway conditions</p>
-<p> 4. Sends location and status to user</p>
-<p> 5. Cheaper than 500 PLN</p>
+<ul>
+  <li>Small tracking device</li>
+  <li>Lasting for a long time</li>
+  <li>Adapted to railway conditions</li>
+  <li>Sends location and status to user</li>
+  <li>Cheaper than 500 PLN</li>
+</ul>
 
 <img src="images/insides.jpg" alt="Alt Text" width="300"/>
