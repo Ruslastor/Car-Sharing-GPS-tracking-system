@@ -16,17 +16,17 @@
 <p>Existing solutions:</p>
 <table>
   <tr>
-    <th><img src="images/circuitry.png" alt="Alt Text" width="300"/></th>
+    <th><img src="images/device1.png" alt="Alt Text" width="300"/></th>
     <th>Contact</th>
     <th>Country</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td><img src="images/device2.png" alt="Alt Text" width="300"/></td>
     <td>Maria Anders</td>
     <td>Germany</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
+    <td><img src="images/device3.png" alt="Alt Text" width="300"/></td>
     <td>Francisco Chang</td>
     <td>Mexico</td>
   </tr>
