@@ -13,6 +13,28 @@
   <li>Cheaper than 500 PLN</li>
 </ul>
 
+<p>Existing solutions:</p>
+<table>
+  <tr>
+    <th><img src="images/circuitry.png" alt="Alt Text" width="300"/></th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+
 <h2><b>Project electronics</b></h2> 
+
+
 
 <img src="images/circuitry.png" alt="Alt Text" width="300"/>
