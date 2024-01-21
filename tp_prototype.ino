@@ -1,6 +1,7 @@
 #include <SoftwareSerial.h>
 #include <GyverPower.h>
 // SIM800L module connections
+#POWERDOWN_DELAY 7200
 #define SIM800_RX_PIN 5
 #define SIM800_TX_PIN 4
 
@@ -38,10 +39,9 @@ void setup() {
 }
 
 void loop() {
-  if (!digitalRead(SIGNAL_PIN)) {
     sendSMS(getGPSLocation());
-    delay(1000); // Delay to avoid multiple SMS sending for a single low-level signal
-  }
+    power.sleepDelay(POWERDOWN_DELAY); // Delay to avoid multiple SMS sending for a single low-level signal
+  
 
   // Other code or tasks to perform in the loop
 }
