@@ -118,5 +118,7 @@
 </ul>
 <p>Both GPS and GSM modules use UART to communicate with arduino. However, the Arduino UNO has only one physical Serial, we used instead 2 Software serial ports.</p>
 
+<h3>Issue with GSM module (fixed)</h3>
 <p>However, we had an issue with the GSM module, which wasn't able to turn on. Looking into the datasheet, the one thing was descovered about those modules. The module itself helps to minimize the amount of pins, and helps for easier antenna management. However, it has really strange voltage decreasing system.</p>
 <p>The chip itslef works at arund 4.2 volts, and the input voltage comes throug 2 power diodes (0.7V per each) connected in series. The voltage across the chip input was measured, and I realized, that with input of 5 volts, as we configured the step-down, the chip voltage was on the level of 3.6V. To reduce it, we connected the 5V power wire to the connection point of those diodes. Thus, the input signal was comming through only one diode, making 4.3 volts on chip itself. And it worked)</p>
+<img src="images/diodes.jpeg" alt="Alt Text" width="300"/>
