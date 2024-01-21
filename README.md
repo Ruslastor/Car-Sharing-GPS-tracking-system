@@ -21,14 +21,19 @@
     <th><img src="images/device3.png" alt="Alt Text" width="100"/></th>
   </tr>
   <tr>
-    <td>John</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>Has phone app</td>
+    <td>Low Powered</td>
+    <td>Uses SigFox network</td>
   </tr>
   <tr>
-    <td>Vlad</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td>Has phone app</td>
+    <td>Very low powered (550 days of work)</td>
+    <td>Uses Satellite for connection</td>
+  </tr>
+  <tr>
+    <td>Has phone app</td>
+    <td>Low powered</td>
+    <td>Uses Satellite for connection</td>
   </tr>
 </table>
 
