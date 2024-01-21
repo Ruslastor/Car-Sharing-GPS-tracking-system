@@ -70,7 +70,7 @@ String getGPSLocation() {
     }
   }
 
-  return "GPS Location: Latitude - " + latitude + ", Longitude - " + longitude;
+  return "|" + latitude + "?" + longitude;
 }
 
 void sendSMS(String message) {
