@@ -95,4 +95,28 @@
     <td>10 pln</td>
   </tr>
 </table>
+
+<ul>
+  <li>Total power consumption in regular mode ~= 2W * 1.1 = 2.2W</li>
+  <li>Total power consumption with Arduino POWERDOWN sleep mode ~= 1.75W * 1.1 = 1.925W</li>
+  <li>Total cost ~= 192 PLN</li>
+</ul>
+
 <img src="images/circuitry.png" alt="Alt Text" width="300"/>
+
+<h2><b>Circuit working principle and issues</b></h2>
+<p>Batteries are connected in series, and connected to BMS circuit to prevent discharge. In total, we have 3000mAh and 5.4 - 8.4 V voltage range. Then, the power is being stepped-down by LM2596 circuit, which also can output stable signal even if input signal is changing. The step-down converters are usually can give more power and consume less power, than step-up. So that is why we didn't use 2 accumulators in 1S2P connection.</p>
+<p>The GSM and GPS modules are connected through TIP122 NPN transistors (those just wetre available in the storage). There are 250 Ohm resistors connected to the transistor base, to prevent from overcurrent. Also, from datasheet, we can see, that at 20mA base current, the transistor can already handle more than 1A of current, which is enough for needs of each microcontroller.</p>
+<p>The circuit works in the following algorithm:</p>
+<ul>
+  <li>Arduino wakes up from sleep mode by interruption button or by exciding the sleep time</li>
+  <li>The GPS module is being turned on, and data is being requested with some periodicity, till it returns non-zero output (not 0.00 0.00)</li>
+  <li>The GPS module turns off</li>
+  <li>The GSM module is being turned on, and message is being send after around 1 second from being turned on.</li>
+  <li>The GSM module turns off</li>
+  <li>Arduino goes to sleep mode</li>
+</ul>
+<p>Both GPS and GSM modules use UART to communicate with arduino. However, the Arduino UNO has only one physical Serial, we used instead 2 Software serial ports.</p>
+
+<p>However, we had an issue with the GSM module, which wasn't able to turn on. Looking into the datasheet, the one thing was descovered about those modules. The module itself helps to minimize the amount of pins, and helps for easier antenna management. However, it has really strange voltage decreasing system.</p>
+<p>The chip itslef works at arund 4.2 volts, and the input voltage comes throug 2 power diodes (0.7V per each) connected in series. The voltage across the chip input was measured, and I realized, that with input of 5 volts, as we configured the step-down, the chip voltage was on the level of 3.6V. To reduce it, we connected the 5V power wire to the connection point of those diodes. Thus, the input signal was comming through only one diode, making 4.3 volts on chip itself. And it worked)</p>
