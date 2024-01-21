@@ -17,16 +17,16 @@
 <table>
   <tr>
     <th><img src="images/device1.png" alt="Alt Text" width="100"/></th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th><img src="images/device2.png" alt="Alt Text" width="100"/></th>
+    <th><img src="images/device3.png" alt="Alt Text" width="100"/></th>
   </tr>
   <tr>
-    <td><img src="images/device2.png" alt="Alt Text" width="100"/></td>
+    <td>John</td>
     <td>Maria Anders</td>
     <td>Germany</td>
   </tr>
   <tr>
-    <td><img src="images/device3.png" alt="Alt Text" width="100"/></td>
+    <td>Vlad</td>
     <td>Francisco Chang</td>
     <td>Mexico</td>
   </tr>
